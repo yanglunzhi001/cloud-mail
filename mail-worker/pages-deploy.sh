@@ -11,10 +11,10 @@ fi
 if [ -z "$ADMIN" ]; then
   echo "❌ ADMIN 不能为空"; exit 1
 fi
-if [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+if [ -z "$CLOUDFLARE_ACCOUNT_ID" ] && [ -z "$CF_ACCOUNT_ID" ]; then
   echo "❌ CLOUDFLARE_ACCOUNT_ID 不能为空"; exit 1
 fi
-if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+if [ -z "$CLOUDFLARE_API_TOKEN" ] && [ -z "$CF_API_TOKEN" ]; then
   echo "❌ CLOUDFLARE_API_TOKEN 不能为空"; exit 1
 fi
 

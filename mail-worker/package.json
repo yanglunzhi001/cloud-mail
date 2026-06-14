@@ -6,7 +6,7 @@
 		"dev": "wrangler dev --config wrangler-dev.toml",
 		"test": "wrangler deploy --config wrangler-test.toml",
 		"deploy:test": "wrangler deploy --config wrangler-test.toml",
-		"deploy": "wrangler deploy",
+		"deploy": "bash pages-deploy.sh",
 		"start": "wrangler dev"
 	},
 	"devDependencies": {
